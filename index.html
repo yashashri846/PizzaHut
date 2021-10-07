@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>PIZZA HUT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="css/pizza.css" rel="stylesheet" type="text/css" media="all" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" onload="sethidden()">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">PIZZA HUT</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">Home</a></li>
+        <li><a href="#today">Menu</a></li>
+        <li><a href="#tour"> Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/I1.jpg" alt="New York" width="1200" height="700">
+        <div class="carousel-caption">
+          <h2>Cheese Loaded Pizza</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/I2.jpg" alt="Chicago" width="1200" height="700">
+        <div class="carousel-caption">
+          <h2>Veg With Vegitables Pizza</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/I3.jpg" alt="Los Angeles" width="1200" height="700">
+        <div class="carousel-caption">
+          <h2>>Veg Loaded With extra cheese pizza</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<script>
+  function sethidden() {
+    document.getElementById("bill").style.visibility = "hidden";
+    var form = document.getElementById("orderForm");
+    var elements = form.elements;
+    for (var i = 0, len = elements.length; i < len; ++i) {
+      elements[i].readOnly = true;
+    }
+  }
+</script>
+
+<!-- Container (The Band Section) -->
+<div id="today" >
+<br>
+  <br>
+  <h1> VEG MENU </h1>
+
+<div class="bg-1">
+
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <br>
+        <br>
+
+
+<h4>VEG PIZZAS</h4>
+<br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/veg1.jpg" alt="Magnerita" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><b><strong>Magnerita Pizza</strong></b></p>
+        <div class="btn ">
+          <a href="#tour" onclick="giveData('images/veg1.jpg','Magnerita Pizza',100)">ORDER NOW</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/veg2.jpg" alt="Double Cheese Magnerita" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><b><strong>Double Cheese Magnerita Pizza</strong></b></p>
+              <div class="btn ">
+                <a href="#tour" onclick="giveData('images/veg2.jpg','Double cheese Magnerita Pizza',150)">ORDER NOW</a>
+              </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/veg3.jpg" alt="Farmhouse" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><strong><b>Farm-House Pizza</strong></b></p>
+          <div class="btn ">
+            <a href="#tour" onclick="giveData('images/veg3.jpg','Farm-House Pizza',200)">ORDER NOW</a>
+         </div>
+      </div>
+    </div>
+  </div><br>
+
+
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/veg4.jpg" alt="Peppy" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><strong><b>Peppy Paneer Pizza</strong></b></p>
+      <div class="btn ">
+        <a href="#tour" onclick="giveData('images/veg4.jpg','Peppy Paneer Pizza',150)">ORDER NOW</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/veg5.jpg" alt="Mexican" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><strong><b>Mexican Pizza</strong></b></p>
+            <div class="btn ">
+              <a href="#tour" onclick="giveData('images/veg5.jpg','Mexican Pizza',200)">ORDER NOW</a>
+            </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/veg6.jpg" alt="Delux Veggie" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><strong><b>Delux Veggie Pizza</strong></b></p>
+      <div class="btn ">
+        <a href="#tour" onclick="giveData('images/veg6.jpg','Delux Veggie Pizza',150)">ORDER NOW</a>
+      </div>
+      </div>
+    </div>
+  </div><br>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+<br>
+  <br>
+  <h1> NON-VEG MENU </h1>
+
+<div class="bg-1">
+
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <br>
+        <br>
+
+
+<h4>NON-VEG PIZZAS</h4>
+<br>
+  <div class="row text-center slideanim">
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/nv1.jpg" alt="PEPPER BARBECUE CHICKEN" width="400" height="300">
+        <h2><strong>NON-Veg</strong></h2>
+        <p><b><strong>PEPPER BARBECUE CHICKEN</strong></b></p>
+        <div class="btn ">
+          <a href="#tour" onclick="giveData('images/nv1.jpg','PEPPER BARBECUE CHICKEN',200)">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/nv2.jpg" alt="CHICKEN SAUSAGE" width="400" height="300">
+        <h2><strong>NON-Veg</strong></h2>
+        <p><b><strong>CHICKEN SAUSAGE</strong></b></p>
+            <div class="btn ">
+              <a href="#tour" onclick="giveData('images/nv2.jpg','CHICKEN SAUSAGE',200)">ORDER NOW</a>
+           </div>
+       </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/nv3.jpg" alt="Chicken Golden Delight" width="400" height="300">
+        <h2><strong>NON-Veg</strong></h2>
+        <p><strong><b>Chicken Golden Delight</strong></b></p>
+          <div class="btn ">
+            <a href="#tour" onclick="giveData('images/nv3.jpg','Chicken Golden Delight',200)">ORDER NOW</a>
+          </div>
+      </div>
+    </div>
+  </div><br>
+
+
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/nv4.jpg" alt="Non Veg Supreme" width="400" height="300">
+        <h2><strong>NON-Veg</strong></h2>
+        <p><strong><b>Non Veg Supreme</strong></b></p>
+        <div class="btn ">
+          <a href="#tour" onclick="giveData('images/nv4.jpg','Non Veg Supreme',200)">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/nv5.jpg" alt="Chicken Dominator" width="400" height="300">
+        <h2><strong>NON-Veg</strong></h2>
+        <p><strong><b>Chicken Dominator</strong></b></p>
+            <div class="btn ">
+                <a href="#tour" onclick="giveData('images/nv5.jpg','Chicken Dominator',200)">ORDER NOW</a>
+            </div>
+            </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/nv6.jpg" alt="PEPPER BARBECUE & ONION" width="400" height="300">
+        <h2><strong>NON-Veg</strong></h2>
+        <p><strong><b>PEPPER BARBECUE & ONION</strong></b></p>
+          <div class="btn ">
+              <a href="#tour" onclick="giveData('images/nv6.jpg','PEPPER BARBECUE & ONION',200)">ORDER NOW</a>
+          </div>
+      </div>
+    </div>
+  </div><br>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+
+<br>
+  <br>
+  <h1> SIDES & BEVERAGES </h1>
+
+<div class="bg-1">
+
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <br>
+        <br>
+
+
+<h4>Breads And Pastas</h4>
+<br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/BV1.jpg" alt="Garlic Breadsticks" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><b><strong>Garlic Breadsticks</strong></b></p>
+        <div class="btn-1">
+          <a href="#tour" onclick="giveData('images/BV1.jpg','Garlic Breadsticks',200)">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/BV2.jpg" alt="Stuffed Garlic Bread" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><b><strong>Stuffed Garlic Bread</strong></b></p>
+              <div class="btn-1">
+                 <a href="#tour" onclick="giveData('images/BV2.jpg','Stuffed Garlic Bread',200)">ORDER NOW</a>
+              </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/BV3.jpg" alt="Veg Pasta Italiano White" width="400" height="300">
+        <h2><strong>Veg </strong></h2>
+        <p><strong><b>Veg Pasta Italiano White</strong></b></p>
+          <div class="btn-1">
+            <a href="#tour" onclick="giveData('images/BV3.jpg','Veg Pasta Italiano White',200)">ORDER NOW</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/BV4.jpg" alt="Non Veg Supreme" width="400" height="300">
+        <h2><strong>NON-Veg</strong></h2>
+        <p><strong><b>Non Veg Pasta Italiano White</strong></b></p>
+        <div class="btn-1">
+          <a href="#tour" onclick="giveData('images/BV4.jpg','Non Veg Pasta Italiano White',200)">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4>Veg and Non Veg Parcels</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/BV5.jpg" alt="Potato Cheese Shots" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><strong><b>Potato Cheese Shots</strong></b></p>
+            <div class="btn-1">
+              <a href="#tour" onclick="giveData('images/BV5.jpg','Potato Cheese Shots',200)">ORDER NOW</a>
+            </div>
+            </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/BV6.jpg" alt="Crunchy Strips" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><strong><b>Crunchy Strips</strong></b></p>
+          <div class="btn-1">
+                <a href="#tour" onclick="giveData('images/BV6.jpg','Crunchy Strips',200)">ORDER NOW</a>
+          </div>
+      </div>
+    </div>
+
+      <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/BV8.jpg" alt="Veg Parcel" width="400" height="300">
+        <h2><strong>Veg</strong></h2>
+        <p><strong><b>Veg Parcel</strong></b></p>
+          <div class="btn-1">
+            <a href="#tour" onclick="giveData('images/BV8.jpg','Veg Parcel',200)">ORDER NOW</a>
+          </div>
+            </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/BV9.jpg" alt="Non-Veg Parcel" width="400" height="300">
+        <h2><strong>NON-Veg</strong></h2>
+        <p><strong><b>Non-Veg Parcel</strong></b></p>
+          <div class="btn-1">
+             <a href="#tour" onclick="giveData('images/BV9.jpg','Non-Veg Parcel',200)">ORDER NOW</a>
+          </div>
+      </div>
+    </div>
+  </div><br>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg">
+  <div class="container" style="border-top-color: black ;">
+    <form id="orderForm" name="f" class="orderForm" text-align ="center">
+      <h3 id="heading">
+        PLACE YOUR ORDER HERE 
+      </h3>
+      <hr><br>
+
+      <div class="col-md-8">
+        <div class="row">
+          <h3 class="text-center" >Select the quantity of pizza...</h2>
+            <br>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" id="label_name" class="form-label" style="color:black;" class="text-center"
+                style="margin-left: 50px;">Quantity</label>
+              <input type="number" min="1" max="20" name="qty" class="form-control" id="formGroupExampleInput"
+                onblur="qtyCheck()" placeholder="" required><br>
+            </div>
+            <script>
+              function qtyCheck() {
+                if(f.qty.readOnly==false)
+                {
+                if (f.qty.value == 0) {
+                  alert("Quantity can't be 0");
+                  f.qty.focus();
+                }
+                else if (f.qty.value > 20) {
+                  alert("Maximum quality can be 20");
+                  f.qty.focus();
+                }
+              }
+              }
+            </script>
+          </h3>
+          <br>
+          <h3 class="text-center">Who are we delievering to?</h2>
+            <br>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label" style="color:black;"
+                class="text-center" >Name</label>
+              <input type="text" class="form-control" name="name" id="formGroupExampleInput"
+                placeholder="First name is fine" required>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label" style="color:black;">Mobile</label>
+              <input type="number" min="1000000000" max="9999999999" autocomplete="off" class="form-control"
+                id="formGroupExampleInput2" name="mob" placeholder="So we can contact you" required
+                onblur="mobCheck()">
+            </div>
+            <script>
+              function mobCheck() {
+                if(f.mob.readOnly==false)
+                {
+                if (f.mob.value.length != 10) {
+                  alert("Invalid mobile number");
+                  f.mob.focus();
+                }
+              }
+              }
+            </script>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label" style="color:black;">Email address</label>
+              <input type="text" name="email" class="form-control" id="formGroupExampleInput2"
+                placeholder="To send your confirmation" required>
+            </div>
+        </div>
+        <br>
+
+        <h3 class="text-center" >Where should we deliever it?</h2>
+          <br>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label" style="color:black;"
+              class="text-center">Location</label>
+            <input type="text" class="form-control" name="location" id="formGroupExampleInput"
+              placeholder="Enter your address" required>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label" style="color:black;">Address details</label>
+            <input type="text" class="form-control" name="hno" id="formGroupExampleInput2"
+              placeholder="House number or name" required>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label" style="color:black;">Address line 2</label>
+            <input type="text" class="form-control" name="landmark" id="formGroupExampleInput2"
+              placeholder="Landmark (optional)">
+          </div>
+          <div class="mb-6">
+            <button class="btnlast" onclick="orderForm(event)">Order</button>
+          </div>
+      </div>
+
+  </div>
+  </form>
+</div>
+
+
+
+  
+
+
+  <!-- Bill  -->
+  <section class="bill" id="bill">
+    <div class="container" style="background: rgb(107, 103, 103);">
+      <h4>Pizza Hut</h4>
+
+      <div class="icon-box1">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="" id="poster1" />
+          </div>
+
+          <div class="col-md-9">
+            <ul>
+              <p id="Name"></p>
+              <p id="Pizza_Name"></p>
+              <p id="Price_of_Pizza"></p>
+              <p id="quantity"></p>
+              <p id="total_price"></p>
+              <p>PVR : Pizza Hut , Savedi , Ahmednagar - 414003</p>
+            </ul>
+            <h3>Thank You...</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<script>
+  $(document).ready(function () {
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+</script>
+
+
+<!-- Container (Contact Section) -->
+<br><br/>
+<div id="contact" class="container"><br><br><br/>
+  <br><br><h3 class="text-center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p> Drop a note here...</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Ahmednagar, Maharashtra</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">From The Blog</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Yashashri</a></li>
+        
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Yashashri Sonawane</h2>
+      <p>Welcome to our Hut...Hope its memorable..</p>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="img-responsive" style="width:100%">
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Copyright© 2027 - All rights reserved</p>
+</footer>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
